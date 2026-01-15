@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KJT Xpert | Services de Nettoyage</title>
+
+<style>
+/* ===== COULEURS ===== */
+:root{
+    --bleu-marin:#0b1c2d;
+    --or:#c9a24d;
+    --gris:#f4f4f4;
+}
+
+/* ===== BASE ===== */
+*{
+    box-sizing:border-box;
+}
+
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:var(--gris);
+    color:#333;
+}
+
+/* ===== HEADER ===== */
+header{
+    background:var(--bleu-marin);
+    color:white;
+    padding:30px 20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    color:var(--or);
+    font-size:30px;
+}
+
+header p{
+    margin-top:10px;
+    font-size:16px;
+}
+
+/* ===== BOUTON APPEL ===== */
+.call-btn{
+    display:block;
+    margin:20px auto 0;
+    width:90%;
+    max-width:360px;
+    background:var(--or);
+    color:#000;
+    text-decoration:none;
+    padding:16px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+/* ===== CONTENU ===== */
+.container{
+    background:white;
+    padding:25px 20px;
+}
+
+h2{
+    color:var(--bleu-marin);
+    border-left:5px solid var(--or);
+    padding-left:12px;
+}
+
+/* ===== SERVICES ===== */
+.service{
+    background:var(--gris);
+    padding:15px;
+    margin-top:15px;
+    border-radius:8px;
+}
+
+/* ===== RENDEZ-VOUS ===== */
+.cta{
+    background:var(--bleu-marin);
+    color:white;
+    text-align:center;
+    padding:30px 20px;
+}
+
+.cta h2{
+    color:var(--or);
+    border:none;
+}
+
+form{
+    margin-top:20px;
+}
+
+input, textarea{
+    width:100%;
+    padding:14px;
+    margin-top:12px;
+    font-size:16px;
+}
+
+button{
+    width:100%;
+    margin-top:20px;
+    padding:16px;
+    background:var(--or);
+    border:none;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:8px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background:#081522;
+    color:white;
+    text-align:center;
+    padding:15px;
+    font-size:14px;
+}
+
+/* ===== DESKTOP ===== */
+@media(min-width:768px){
+    header h1{
+        font-size:40px;
+    }
+    .container{
+        max-width:1000px;
+        margin:auto;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>KJT Xpert</h1>
+    <p>Nettoyage résidentiel et commercial</p>
+
+    <a class="call-btn" href="tel:8197550244">
+        📞 Appeler maintenant
+    </a>
+</header>
+
+<div class="container">
+    <h2>Nos services</h2>
+
+    <div class="service">🧹 Nettoyage résidentiel</div>
+    <div class="service">🏢 Nettoyage commercial</div>
+    <div class="service">✨ Nettoyage en profondeur</div>
+</div>
+
+<div class="cta">
+    <h2>Prendre rendez-vous</h2>
+    <p>Du lundi au vendredi, de 8 h à 17 h</p>
+</div>
+
+<div class="container">
+    <form>
+        <input type="text" placeholder="Nom complet" required>
+        <input type="tel" placeholder="Téléphone" required>
+        <input type="email" placeholder="Courriel">
+        <input type="date" required>
+        <input type="time" required>
+        <textarea rows="4" placeholder="Détails du service"></textarea>
+
+        <button type="submit">
+            📅 Réserver
+        </button>
+    </form>
+</div>
+
+<footer>
+    © 2026 – KJT Xpert
+</footer>
+
+</body>
+</html>
